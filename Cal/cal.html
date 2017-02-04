@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>CAL</title>
+</head>
+<style>
+	#calculadora{
+		background-color: gray;
+		border:1px solid black;
+		width: 260px;
+		height: 260px;
+		position:relative;
+	}
+	#inCalculadora{
+		position: absolute;
+		background-color: white;
+		border:1px solid blue;
+		width: 240px;
+		height: 240px;
+		top:20px;
+		left:20px;
+		text-align: center;
+		
+	 }
+	 #screen{
+		 position:absolute;
+		 width: 200px;
+		 height: 40px;
+		 top: 10px;
+		 left: 20px;
+		 border:1px solid black;
+	 }
+	 #comandosScreen{
+		 position:absolute;
+		 width: 220px;
+		 height: 30px;
+		 top: 60px;
+		 left: 10px;
+		 border:1px solid red;
+	 }
+	 .buttonScreen{
+		 width: 50px;
+		 height: 20px;
+		 position:absolute;
+		 display:inline-block;
+		 top:5px;
+	 }
+	 .left{
+		 left:10px;
+	 }
+	 .center{
+		 left: 85px;
+	 }
+	 .right{
+		 left: 160px;
+	  }
+	  .fila1{
+		position:absolute;
+		top: 100px;
+	  }
+	  .fila2{
+		 position:absolute;
+		  top: 135px;
+	}
+	  .fila3{ 
+		 position:absolute;
+		  top: 165px;
+	  }
+	  .fila4{
+		  position:absolute;
+		top:200px;
+	  }
+	  .column1{
+		  position:absolute;
+		  left:10px;
+	  }
+	  .column2{
+		  position:absolute;
+		  left:55px;
+	  }
+	  .column3{
+		  position:absolute;
+		  left:100px;
+	  }
+	.column4{
+		  position:absolute;
+		  left:145px;
+	  }
+	.column5{
+		  position:absolute;
+		  left:190px;
+	  }
+	  .buttonTeclado{
+		width: 40px;
+		height: 20px;
+		text-align: center;
+	  }
+	  .screen{
+		  text-align: right;
+		  position:relative;
+	  }
+	#valoresScreen{
+		margin-right: 10px;
+	}
+
+
+	  
+
+</style>
+
+<body>
+	<div id="calculadora"></div>
+	<div id="inCalculadora">
+		<div class="screen" id="screen">
+			<p id="valoresScreen"></p>
+		</div>
+		<div id="comandosScreen">
+			<button class="buttonScreen left" id="buttonRtrc" value="Retr"/>Retr</button>
+			<button class="buttonScreen center" id="buttonCE" value="CE"/>CE</button>
+			<button class="buttonScreen right" id="buttonC" value="C"/>C</button>
+		</div>
+		<div class:fila1>
+			<button class="buttonTeclado fila1 column1" id="buttonRtrc" >7</button>
+			<button class="buttonTeclado fila1 column2" id="buttonCE" />8</button>
+			<button class="buttonTeclado fila1 column3" id="buttonC" />9</button>
+			<button class="buttonTeclado fila1 column4" id="buttonDivide" value="Divide">/</button>
+			<button class="buttonTeclado fila1 column5" id="buttonRaiz" value="Raiz"/>Raiz</button>
+		</div>
+		<div class:fila2>
+			<button class="buttonTeclado column1 fila2" id="button4" />4</button>
+			<button class="buttonTeclado column2 fila2" id="button5">5</button>
+			<button class="buttonTeclado column3 fila2" id="button6" />6</button>
+			<button class="buttonTeclado column4 fila2" id="buttonMultip" value="Multiplica"/>*</button>
+			<button class="buttonTeclado column5 fila2" id="buttonResto" value="Resto"/>%</button>
+		</div>
+		<div class:fila3>
+			<button class="buttonTeclado column1 fila3" id="button1" />1</button>
+			<button class="buttonTeclado column2 fila3" id="button2">2</button>
+			<button class="buttonTeclado column3 fila3" id="button3" />3</button>
+			<button class="buttonTeclado column4 fila3" id="buttonResta"value="Resta" />-</button>
+			<button class="buttonTeclado column5 fila3" id="buttonX" value="Fraccion"/>1/x</button>
+		</div>
+		<div class:fila4>
+			<button class="buttonTeclado column1 fila4" id="button0" />0</button>
+			<button class="buttonTeclado column2 fila4" id="buttonKK" value="Signo">+/-</button>
+			<button class="buttonTeclado column3 fila4" id="buttonComa" value="Decimal"/>.</button>
+			<button class="buttonTeclado column4 fila4" id="buttonSuma" value="Suma"/>+</button>
+			<button class="buttonTeclado column5 fila4" id="buttonIgual" value="Igual"/>=</button>
+		</div>
+		<div id="teclasCal">
+
+
+		</div>
+
+		<div>
+</body>
+<script type="text/javascript" src="cal.js"></script>
+
+</html>
